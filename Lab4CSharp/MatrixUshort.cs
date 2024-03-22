@@ -360,8 +360,9 @@ public class MatrixUshort
         if (left.n != right.n)
         {
             throw new ArgumentException("Розмiрностi матриць повиннi бути однаковими.");
+
         }
-        // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
+        // Перевiрка на валiднiсть вхiдних параметрiв 
         MatrixUshort result = new MatrixUshort(left.n, left.m);
 
         for (int i = 0; i < left.n; i++)
@@ -499,7 +500,6 @@ public class MatrixUshort
     }
     public static MatrixUshort operator |(MatrixUshort left, MatrixUshort right)
     {
-        // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
         MatrixUshort result = new MatrixUshort(left.n, right.m);
         for (int i = 0; i < left.n; i++)
         {
@@ -512,7 +512,7 @@ public class MatrixUshort
     }
     public static MatrixUshort operator |(MatrixUshort matrix, ushort scalar)
     {
-        // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
+        // Перевiрка на валiднiсть вхiдних параметрiв 
         MatrixUshort result = new MatrixUshort(matrix.n, matrix.m);
 
         for (int i = 0; i < matrix.n; i++)

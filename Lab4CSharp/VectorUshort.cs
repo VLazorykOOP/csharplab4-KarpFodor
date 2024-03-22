@@ -214,7 +214,6 @@ namespace Lab4CSharp
             {
                 if (vector1.ArrayUShort[i] < vector2.ArrayUShort[i])
                 {
-                    //throw new InvalidOperationException("Вiднiмання може призвести до вiд'ємного результату.");
                     Console.WriteLine("Вiдємне значення виходить");
                     result.ArrayUShort[i] = 0;
                     continue;
@@ -238,7 +237,6 @@ namespace Lab4CSharp
             {
                 if (vector1.ArrayUShort[i] < scalar)
                 {
-                    //throw new InvalidOperationException("Вiднiмання може призвести до вiд'ємного результату.");
                     Console.WriteLine("Вiдємне значення виходить");
                     vector.ArrayUShort[i] = 0;
                     continue;
@@ -389,7 +387,6 @@ namespace Lab4CSharp
         }
         public static VectorUshort operator |(VectorUshort left, VectorUshort right)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(left.num);
 
             for (uint i = 0; i < left.num; i++)
@@ -402,7 +399,6 @@ namespace Lab4CSharp
 
         public static VectorUshort operator |(VectorUshort vector, ushort scalar)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(vector.num);
 
             for (uint i = 0; i < vector.num; i++)
@@ -415,7 +411,6 @@ namespace Lab4CSharp
 
         public static VectorUshort operator ^(VectorUshort left, VectorUshort right)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(left.num);
 
             for (uint i = 0; i < left.num; i++)
@@ -428,7 +423,6 @@ namespace Lab4CSharp
 
         public static VectorUshort operator ^(VectorUshort vector, ushort scalar)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(vector.num);
 
             for (uint i = 0; i < vector.num; i++)
@@ -441,7 +435,6 @@ namespace Lab4CSharp
 
         public static VectorUshort operator &(VectorUshort left, VectorUshort right)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(left.num);
 
             for (uint i = 0; i < left.num; i++)
@@ -454,7 +447,6 @@ namespace Lab4CSharp
 
         public static VectorUshort operator &(VectorUshort vector, ushort scalar)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(vector.num);
 
             for (uint i = 0; i < vector.num; i++)
@@ -466,7 +458,6 @@ namespace Lab4CSharp
         }
         public static VectorUshort operator >>(VectorUshort vector, int shift)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(vector.num);
 
             for (uint i = 0; i < vector.num; i++)
@@ -478,7 +469,6 @@ namespace Lab4CSharp
         }
         public static VectorUshort operator <<(VectorUshort left, int shift)
         {
-            // Перевiрка на валiднiсть вхiдних параметрiв може бути додана за необхiдностi
             VectorUshort result = new VectorUshort(left.num);
 
             for (uint i = 0; i < left.num; i++)
